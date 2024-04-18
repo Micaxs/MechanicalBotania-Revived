@@ -3,6 +3,7 @@ package net.micaxs.mechanicalbotania;
 import net.micaxs.mechanicalbotania.client.ClientRegistryHandler;
 import net.micaxs.mechanicalbotania.init.BlockEntityRegistry;
 import net.micaxs.mechanicalbotania.init.BlockRegistry;
+import net.micaxs.mechanicalbotania.init.CreativeTabs;
 import net.micaxs.mechanicalbotania.init.ItemRegistry;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -21,7 +22,7 @@ public class MechanicalBotania
     public MechanicalBotania()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        CreativeTabs.register(modEventBus);
         ItemRegistry.ITEMS.register(modEventBus);
         BlockRegistry.BLOCKS.register(modEventBus);
         BlockEntityRegistry.BLOCK_ENTITY_TYPE.register(modEventBus);
