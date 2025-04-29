@@ -115,6 +115,7 @@ public class ManaMotorBlockEntity extends GeneratingKineticBlockEntity {
     public float getGeneratedSpeed() {
         return convertToDirection((float)this.getRPM(), (Direction)this.getBlockState().getValue(ManaMotor.FACING));
     }
+
     @Override
     public float calculateAddedStressCapacity() {
         float capacity = Math.round((float) baseStress / (numberBoundFlowers * (getRPM() / 8) * 4));

@@ -4,16 +4,14 @@ import net.micaxs.mechanicalbotania.blocks.ManaMotorBlockEntity;
 import net.micaxs.mechanicalbotania.blocks.ManaMotorRenderer;
 import net.micaxs.mechanicalbotania.init.BlockEntityRegistry;
 import net.micaxs.mechanicalbotania.init.BlockRegistry;
-import com.jozufozu.flywheel.backend.instancing.InstancedRenderRegistry;
-import com.simibubi.create.content.kinetics.base.HalfShaftInstance;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import vazkii.botania.client.render.block_entity.SpecialFlowerBlockEntityRenderer;
-
 import java.util.function.BiConsumer;
+
 
 public class ClientRegistry {
     static void registerLayers(FMLClientSetupEvent event) {
@@ -29,9 +27,11 @@ public class ClientRegistry {
         event.registerBlockEntityRenderer(BlockEntityRegistry.MANAMOTOR.get(), ManaMotorRenderer::new);
     }
 
-    static void registerInstance(FMLClientSetupEvent event) {
-        InstancedRenderRegistry.BlockEntityConfig<ManaMotorBlockEntity> registry = InstancedRenderRegistry.configure(BlockEntityRegistry.MANAMOTOR.get());
-        registry.factory(HalfShaftInstance::new);
-        registry.apply();
-    }
+
+//    static void registerInstance(FMLClientSetupEvent event) {
+//        InstancedRenderRegistry.BlockEntityConfig<ManaMotorBlockEntity> registry = InstancedRenderRegistry.configure(BlockEntityRegistry.MANAMOTOR.get());
+//        registry.factory(HalfShaftInstance::new);
+//        registry.apply();
+//    }
+
 }

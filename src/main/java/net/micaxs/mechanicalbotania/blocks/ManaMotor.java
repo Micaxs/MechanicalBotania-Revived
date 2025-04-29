@@ -1,5 +1,6 @@
 package net.micaxs.mechanicalbotania.blocks;
 
+import com.simibubi.create.content.kinetics.base.DirectionalAxisKineticBlock;
 import net.micaxs.mechanicalbotania.init.BlockEntityRegistry;
 import com.simibubi.create.AllShapes;
 import com.simibubi.create.content.kinetics.base.DirectionalKineticBlock;
@@ -17,8 +18,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Random;
     public class ManaMotor extends DirectionalKineticBlock implements IBE<ManaMotorBlockEntity> {
@@ -43,7 +47,7 @@ import java.util.Random;
             return defaultBlockState().setValue(FACING, preferred);
         }
 
-        public VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
+        public @NotNull VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
             return AllShapes.MOTOR_BLOCK.get((Direction) state.getValue(FACING));
         }
 

@@ -29,7 +29,7 @@ displayName="Mechanical Botania" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="B" #optional
+credits="BoxxyNetwork" #optional
 # A text field displayed in the mod UI
 authors="Micaxs" #optional
 # Display Test controls the display for your mod in the server connection screen
@@ -74,6 +74,6 @@ side="BOTH"
 [[dependencies.mechanicalbotania]]
 modId="create"
 mandatory=true
-versionRange="[0.5.1,)"
+versionRange="[6.0.4,6.1.0)"
 ordering="NONE"
 side="BOTH"
