@@ -1,9 +1,7 @@
 package net.micaxs.mechanicalbotania.blocks;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Axis;
 import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
 import net.createmod.catnip.animation.AnimationTickHolder;
 import net.createmod.catnip.render.CachedBuffers;
@@ -12,11 +10,8 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.phys.Vec3;
 
 public class ManaMotorRenderer extends KineticBlockEntityRenderer<ManaMotorBlockEntity> {
     public ManaMotorRenderer(BlockEntityRendererProvider.Context context) {

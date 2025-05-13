@@ -1,6 +1,5 @@
 package net.micaxs.mechanicalbotania.client;
 
-import net.micaxs.mechanicalbotania.blocks.ManaMotorBlockEntity;
 import net.micaxs.mechanicalbotania.blocks.ManaMotorRenderer;
 import net.micaxs.mechanicalbotania.init.BlockEntityRegistry;
 import net.micaxs.mechanicalbotania.init.BlockRegistry;
