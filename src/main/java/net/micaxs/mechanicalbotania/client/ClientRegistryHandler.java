@@ -8,6 +8,5 @@ public class ClientRegistryHandler {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(ClientRegistry::registerBlockEntityRenderers);
         bus.addListener(ClientRegistry::registerLayers);
-        //bus.addListener(ClientRegistry::registerInstance);
     }
 }

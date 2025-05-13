@@ -27,11 +27,4 @@ public class ClientRegistry {
         event.registerBlockEntityRenderer(BlockEntityRegistry.MANAMOTOR.get(), ManaMotorRenderer::new);
     }
 
-
-//    static void registerInstance(FMLClientSetupEvent event) {
-//        InstancedRenderRegistry.BlockEntityConfig<ManaMotorBlockEntity> registry = InstancedRenderRegistry.configure(BlockEntityRegistry.MANAMOTOR.get());
-//        registry.factory(HalfShaftInstance::new);
-//        registry.apply();
-//    }
-
 }

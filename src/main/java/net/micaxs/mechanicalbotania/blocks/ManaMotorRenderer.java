@@ -37,7 +37,6 @@ public class ManaMotorRenderer extends KineticBlockEntityRenderer<ManaMotorBlock
         } else if (state.hasProperty(BlockStateProperties.HORIZONTAL_FACING)) {
             facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING);
         } else {
-            // Default to EAST if no facing property exists
             facing = Direction.EAST;
         }
 
